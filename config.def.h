@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "IBM Plex Mono:pixelsize=18:antialias=true:autohint=true";
+static char *font = "IBM Plex Mono:size=16:antialias=true:autohint=true";
 static int borderpx = 15;
 
 /*
@@ -26,8 +26,8 @@ char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
-static float cwscale = 1.0;
-static float chscale = .8;
+static float cwscale = 1.f;
+static float chscale = 1.f;
 
 /*
  * word delimiter string
